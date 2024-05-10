@@ -1,0 +1,52 @@
+:root {
+    --section-height: calc(98vh - 40px); /* 40px - высота навигационного меню */
+}
+#home {
+    --section-height: calc(110vh - 40px); /* новая высота для специальной секции */
+}
+
+section {
+    height: var(--section-height);
+    /*text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 24px; */
+}
+
+#home {
+    background-color: rgb(255, 255, 255);
+}
+
+#mayak {
+    background-color: #e6e6e6;
+}
+
+#map {
+    background-color: #ffffff;
+}
+
+#team {
+    background-color: #cccccc;
+}
+section {
+    position: relative; /* Необходимо для позиционирования изображения */
+}
+
+section img {
+    position: absolute;
+    top: 23%; /* Расстояние от верхнего края секции */
+    right: 10%; /* Расстояние от правого края секции */
+    width: 30%; /* Ширина картинки */
+    height: auto; /* Автоматическое масштабирование высоты */
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3B82F6; /* Цвет фона меню */
+    color: white; /* Цвет текста */
+    z-index: 1000; /* Поднимаем навигацию над остальными элементами */
+}

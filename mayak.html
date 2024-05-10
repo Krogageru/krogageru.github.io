@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <script src="https://cdn.tailwindcss.com"></script>
+            <title>Маяковский — 130 лет!</title>
+    </head>
+    <body>     
+        <nav class="flex justify-center space-x-4 bg-red-900 text-xl calc(25% + 40px)">
+            <a href="#home" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('home')">Начало</a>
+            <a href="#mayak" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('mayak')">Маяковский</a>
+            <a href="#map" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('map')">Интерактивная карта</a>
+            <a href="#team" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('team')">Наша команда</a>
+        </nav>
+    <div>
+        <section id="home" class="text-black-50" style=" padding-top: 25%; padding-left: 10%">
+            <p> ТУТ КРУТОЙ ТЕКСТ ТАКОЙ-ТО ПРИВЕТСВЕННЫЙ </p>
+            <img src="mayak.png" class="">   
+        </section>
+        <section id="mayak" class="text-center grid gap-4 grid-cols-2 grid-rows-2">
+        <p>Поля для текста</p>
+        <p>Поля для текста</p>
+        </section>
+        <section id="map">
+            <p class="text-center text-3xl ">Интерактивная карта</p>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62be483aa0e2108dca38abb782045c6fdeae13e080f77b30c1324c3a76bb6937&amp;width=100%25&amp;height=95%&amp;lang=ru_RU&amp;scroll=false"></script>        </section>
+        <section id="team">Это мы</section>
+    </div>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const sectionTop = section.offsetTop - 55; // 40px - высота навигационного меню
+            setTimeout(() => {
+                window.scrollTo({
+                    top: sectionTop,
+                    behavior: 'smooth'
+                });
+            }, 0); // Задержка в миллисекундах перед скроллом
+        }
+    </script>
+
+    </body>
+</html>
