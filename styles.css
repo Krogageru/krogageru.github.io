@@ -2,7 +2,10 @@
     --section-height: calc(98vh - 40px); /* 40px - высота навигационного меню */
 }
 #home {
-    --section-height: calc(110vh - 40px); /* новая высота для специальной секции */
+    --section-height: calc(105vh - 40px); /* новая высота для специальной секции */
+}
+#mayak {
+    --section-height: calc(99vh - 40px); /* новая высота для специальной секции */
 }
 
 section {
@@ -19,7 +22,7 @@ section {
 }
 
 #mayak {
-    background-color: #e6e6e6;
+    background-color: #575050;
 }
 
 #map {
@@ -33,7 +36,7 @@ section {
     position: relative; /* Необходимо для позиционирования изображения */
 }
 
-section img {
+#may1 {
     position: absolute;
     top: 23%; /* Расстояние от верхнего края секции */
     right: 10%; /* Расстояние от правого края секции */
@@ -49,4 +52,38 @@ nav {
     background-color: #3B82F6; /* Цвет фона меню */
     color: white; /* Цвет текста */
     z-index: 1000; /* Поднимаем навигацию над остальными элементами */
+}
+
+#down {
+    position: absolute;
+    bottom: 10px; /* Расстояние от нижнего края секции */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* Центрирование по горизонтали */
+    width: 40px;
+    transition: opacity 0.3s ease-in-out; /* Добавляем анимацию для свойства opacity */
+
+}
+
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.moving-text {
+    position: absolute;
+    animation: moveRightToLeft 10s linear infinite;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5); /* Цвет текста */
+    width: 100%; /* Ширина текста занимает всю ширину контейнера */
+    height: 100%; /* Высота текста занимает всю высоту контейнера */
+    top: 0; /* Располагаем текст вверху контейнера */
+    left: 0; /* Располагаем текст в левом углу контейнера */
+    display: flex; /* Используем flex для выравнивания по центру */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    align-items: center; /* Выравнивание по вертикали */
 }
