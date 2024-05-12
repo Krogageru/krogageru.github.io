@@ -6,6 +6,20 @@
         <link rel="shortcut icon" type="image/png" href="log.png" />
         <script src="https://cdn.tailwindcss.com"></script>
             <title>Маяковский — 130 лет!</title>
+            <style>
+                /* Стили для всплывающего окна */
+                .popup {
+                    display: none;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: white;
+                    padding: 20px;
+                    border: 1px solid #ccc;
+                    z-index: 9999;
+                }
+            </style>
     </head>
     <body>     
         <nav class="flex justify-center space-x-4 bg-red-800 text-xl calc(25% + 40px)">
@@ -16,6 +30,11 @@
             <a href="#sourse" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('sourse')">Источники</a>
             <a href="#team" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('team')">Наша команда</a>
         </nav>
+        <div id="popup" class="popup">
+            <p class="text-2xl font-black text-gray-700">Пожалуйста, посетите этот сайт с компьютера. </p>
+            <img src="device-laptop.png">
+            <p class="text-2xl font-black text-gray-700">Сайт не оптимизирован для мобильных устройств. </p>
+        </div>  
         <section id="home" class="text-black-50 from-mayak-600 relative" style="padding-top: 23%; padding-left: 10%">       
             <span class="box-decoration-clone bg-gradient-to-r from-rose-500 to-rose-950 text-4xl font-black text-white px-2">
                 ВЕЛИКИЙ ПОЭТ В ВЕЛИКОМ ГОРОДЕ:
@@ -187,6 +206,17 @@
                 });
             }, 0); // Задержка в миллисекундах перед скроллом
         }
+    </script>
+    
+    <script>
+            // JavaScript для определения устройства и отображения всплывающего окна
+            window.addEventListener('load', function() {
+                // Проверяем, является ли устройство мобильным
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    // Отображаем всплывающее окно
+                    document.getElementById('popup').style.display = 'block';
+                }
+            });
     </script>
 
     </body>

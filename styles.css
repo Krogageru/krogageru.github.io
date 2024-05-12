@@ -101,3 +101,15 @@ iframe.noScrolling{
     height: 100%; /*or any other size*/
     overflow: hidden;
   }
+
+  .popup img {
+    max-width: 10%; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая высота изображения */
+    margin-bottom: 20px; /* Отступ снизу изображения */
+    max-width: 30%; /* Максимальная ширина изображения */
+    height: auto; /* Автоматическая высота изображения */
+    margin-bottom: 20px; /* Отступ снизу изображения */
+    display: block; /* Сделать изображение блочным элементом */
+    margin-left: auto; /* Автоматический отступ слева */
+    margin-right: auto; /* Автоматический отступ справа */
+}
