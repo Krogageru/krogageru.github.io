@@ -5,7 +5,7 @@
     --section-height: calc(105vh - 40px); /* новая высота для специальной секции */
 }
 #mayak {
-    --section-height: calc(99vh - 40px); /* новая высота для специальной секции */
+    --section-height: calc(120vh - 40px); /* новая высота для специальной секции */
 }
 #end {
     --section-height: calc(20vh - 40px); /* новая высота для специальной секции */
