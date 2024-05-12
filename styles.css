@@ -7,6 +7,7 @@
 #mayak {
     --section-height: calc(110vh - 40px); /* новая высота для специальной секции */
 }
+
 #end {
     --section-height: calc(20vh - 40px); /* новая высота для специальной секции */
 }
@@ -36,6 +37,9 @@ section {
     background-color: #cccccc;
 }
 
+#video {
+    background-color: #000000;
+}
 
 section {
     position: relative; /* Необходимо для позиционирования изображения */
