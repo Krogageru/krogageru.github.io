@@ -6,20 +6,6 @@
         <link rel="shortcut icon" type="image/png" href="log.png" />
         <script src="https://cdn.tailwindcss.com"></script>
             <title>Маяковский — 130 лет!</title>
-            <style>
-                /* Стили для всплывающего окна */
-                .popup {
-                    display: none;
-                    position: fixed;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    background-color: white;
-                    padding: 20px;
-                    border: 1px solid #ccc;
-                    z-index: 9999;
-                }
-            </style>
     </head>
     <body>     
         <nav class="flex justify-center space-x-4 bg-red-800 text-xl calc(25% + 40px)">
@@ -30,11 +16,7 @@
             <a href="#sourse" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('sourse')">Источники</a>
             <a href="#team" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('team')">Наша команда</a>
         </nav>
-        <div id="popup" class="popup">
-            <p class="text-2xl font-black text-gray-700">Пожалуйста, посетите этот сайт с компьютера. </p>
-            <img src="device-laptop.png">
-            <p class="text-2xl font-black text-gray-700">Сайт не оптимизирован для мобильных устройств. </p>
-        </div> 
+        
         <script>
             // JavaScript для определения устройства и отображения всплывающего окна
             window.addEventListener('load', function() {
@@ -49,83 +31,29 @@
                 }
             });
         </script>
+
+        <div id="popup" class="popup">
+            <p class="text-2xl font-black text-gray-700">Пожалуйста, посетите этот сайт с компьютера. </p>
+            <img src="device-laptop.png">
+            <p class="text-2xl font-black text-gray-700">Сайт не оптимизирован для мобильных устройств. </p>
+        </div> 
+
         <section id="home" class="text-black-50 from-mayak-600 relative" style="padding-top: 23%; padding-left: 10%">       
             <span class="box-decoration-clone bg-gradient-to-r from-rose-500 to-rose-950 text-4xl font-black text-white px-2">
                 ВЕЛИКИЙ ПОЭТ В ВЕЛИКОМ ГОРОДЕ:
                 <br/>САНКТ-ПЕТЕРБУРГ ОТМЕЧАЕТ
                 <br/>130 — ЛЕТИЕ МАЯКОВСКОГО!
             </span>
-            <!-- <div class="moving-text leading-loose">
-                <p>Вам, проживающим за оргией оргию,
-                    <br>имеющим ванную и теплый клозет!
-                    <br>Как вам не стыдно о представленных к Георгию
-                    <br>вычитывать из столбцов газет?!
-                    <br>Знаете ли вы, бездарные, многие,
-                    <br>думающие нажраться лучше как, —
-                    <br>может быть, сейчас бомбой ноги
-                    <br>выдрало у Петрова поручика?..
-                    <br>Если б он, приведенный на убой,
-                    <br>вдруг увидел, израненный,
-                    <br>как вы измазанной в котлете губой
-                    <br>похотливо напеваете Северянина!
-                    <br>Вам ли, любящим баб да блюда,
-                    <br>жизнь отдавать в угоду?!
-                    <br>Я лучше в баре бл***м буду
-                    <br>подавать ананасную воду!
-                </p>
-                <p class="duplicate">Вам, проживающим за оргией оргию,
-                    <br>имеющим ванную и теплый клозет!
-                    <br>Как вам не стыдно о представленных к Георгию
-                    <br>вычитывать из столбцов газет?!
-                    <br>Знаете ли вы, бездарные, многие,
-                    <br>думающие нажраться лучше как, —
-                    <br>может быть, сейчас бомбой ноги
-                    <br>выдрало у Петрова поручика?..
-                    <br>Если б он, приведенный на убой,
-                    <br>вдруг увидел, израненный,
-                    <br>как вы измазанной в котлете губой
-                    <br>похотливо напеваете Северянина!
-                    <br>Вам ли, любящим баб да блюда,
-                    <br>жизнь отдавать в угоду?!
-                    <br>Я лучше в баре бл***м буду
-                    <br>подавать ананасную воду!</p>
-            </div> -->
             <img src="mayak.png" id="may1" class="">
             <img src="down.png" id="down" class="absolute bottom-0 left-0 right-0 mx-auto animate-bounce invert" style="width: 40px;">
         </section>
-        
-        <script>
-            window.addEventListener('scroll', function() {
-    var scrollPosition = window.scrollY; // Текущая позиция прокрутки по вертикали
 
-    // Получаем элемент стрелочки
-    var arrow = document.getElementById('down');
-
-    // Проверяем, скрывать или показывать стрелочку в зависимости от положения прокрутки
-    if (scrollPosition > 50) { // Если прокрутка больше 50 пикселей от верхнего края
-        arrow.style.opacity = 0; // Скрываем стрелочку
-    } else {
-        arrow.style.opacity = 1; // Показываем стрелочку
-    }
-});
-
-        </script>
         <section id="mayak" class="text-center">
             <div style="position:relative;padding-top:max(60%,324px);width:100%;height:0;overflow:hidden;" onmouseover="allowScrolling()">
                 <iframe id="myFrame" style="position:absolute;border:none;width:100%;height:95%;left:0;top:0;" src="https://online.fliphtml5.com/plcxt/toae/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" src="http://www.example.com/" class="noScrolling"> </iframe>
             </div>
-        </section>
+        </section>     
         
-        <script>
-            var frame = document.getElementById('myFrame');
-        
-            function allowScrolling() {
-                frame.style.pointerEvents = 'none'; // Запрещаем захват событий мыши внутри iframe
-                setTimeout(function() {
-                    frame.style.pointerEvents = 'auto'; // Возвращаем обычное поведение iframe после того, как курсор покинет его пределы
-                }, 1000); // Задержка в миллисекундах перед возвращением обычного поведения
-            }
-        </script>      
         <section id="map">
             <p class="text-center text-3xl font-bold">Интерактивная карта "По следам Маяковского"</p>
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62be483aa0e2108dca38abb782045c6fdeae13e080f77b30c1324c3a76bb6937&amp;width=100%25&amp;height=95%&amp;lang=ru_RU&amp;scroll=false"></script>        </section>
@@ -133,6 +61,7 @@
             <p class="text-center text-3xl font-bold text-slate-100">Видеоэкскурсия</p>
             <iframe width="100%" height="95%" src="https://www.youtube.com/embed/--qNgSWjJb4?si=xztcFQRrqEaB7Qy4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
+        
         <section id="sourse" class="">
             <p class="text-center text-3xl font-bold">Источники:</p>
             <ol class="list-decimal text-2xl font px-2">
@@ -144,7 +73,8 @@
                 <li>6. Памятник-бюст Владимиру Владимировичу Маяковскому // Петербург Центр <a href="https://peterburg.center/maps/pamyatnik-byust-vladimiru-vladimirovichu-mayakovskomu.html">URL: https://peterburg.center/maps/pamyatnik-byust-vladimiru-vladimirovichu-mayakovskomu.html </a>(дата обращения: 10.05.2024).</li>
               </ol>
         </section> 
-            <section id="team" class="py-10 bg-gray-200">
+        
+        <section id="team" class="py-10 bg-gray-200">
                 <div class="container mx-auto">
                     <h2 class="text-center text-3xl font-bold mb-10">Наша команда</h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -194,6 +124,7 @@
                 </div>
             
         </section>
+
         <section id="end" class="bg-red-800 flex justify-center items-center">
             <p class="text-xl font-black text-white px-2 pt-1 h-100">
                 Что-то пошло не так?
@@ -208,7 +139,32 @@
             <p class="text-lg font-medium text-white ml-10 px-2 pt-1 h-100">C любовью 💌 команда №2 группы ГМУ-3-23-06 </p>
         </section>
         
+    <script>
+        var frame = document.getElementById('myFrame');
         
+        function allowScrolling() {
+            frame.style.pointerEvents = 'none'; // Запрещаем захват событий мыши внутри iframe
+            setTimeout(function() {
+             frame.style.pointerEvents = 'auto'; // Возвращаем обычное поведение iframe после того, как курсор покинет его пределы
+            }, 1000); // Задержка в миллисекундах перед возвращением обычного поведения
+                }
+    </script>     
+    
+    <script>
+        window.addEventListener('scroll', function() {
+        var scrollPosition = window.scrollY; // Текущая позиция прокрутки по вертикали
+
+        // Получаем элемент стрелочки
+        var arrow = document.getElementById('down');
+
+        // Проверяем, скрывать или показывать стрелочку в зависимости от положения прокрутки
+        if (scrollPosition > 50) { // Если прокрутка больше 50 пикселей от верхнего края
+            arrow.style.opacity = 0; // Скрываем стрелочку
+        } else {
+            arrow.style.opacity = 1; // Показываем стрелочку
+        }
+    });
+    </script>
     <script>
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
