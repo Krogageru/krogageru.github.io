@@ -7,6 +7,9 @@
 #mayak {
     --section-height: calc(99vh - 40px); /* новая высота для специальной секции */
 }
+#end {
+    --section-height: calc(20vh - 40px); /* новая высота для специальной секции */
+}
 
 section {
     height: var(--section-height);
@@ -32,6 +35,8 @@ section {
 #team {
     background-color: #cccccc;
 }
+
+
 section {
     position: relative; /* Необходимо для позиционирования изображения */
 }
@@ -87,3 +92,8 @@ nav {
     justify-content: flex-start; /* Выравнивание по левому краю */
     align-items: center; /* Выравнивание по вертикали */
 }
+iframe.noScrolling{
+    width: 100%; /*or any other size*/
+    height: 100%; /*or any other size*/
+    overflow: hidden;
+  }

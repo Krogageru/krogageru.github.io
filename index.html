@@ -12,6 +12,7 @@
             <a href="#home" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('home')">Начало</a>
             <a href="#mayak" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('mayak')">Маяковский</a>
             <a href="#map" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('map')">Интерактивная карта</a>
+            <a href="#sourse" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('sourse')">Источники</a>
             <a href="#team" class="font-bold px-3 py-4 text-white-700 hover:bg-slate-100 hover:text-slate-900" onclick="scrollToSection('team')">Наша команда</a>
         </nav>
         <section id="home" class="text-black-50 from-mayak-600 relative" style="padding-top: 23%; padding-left: 10%">       
@@ -77,7 +78,7 @@
         </script>
         <section id="mayak" class="text-center">
             <div style="position:relative;padding-top:max(60%,324px);width:100%;height:0;overflow:hidden;" onmouseover="allowScrolling()">
-                <iframe id="myFrame" style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/plcxt/mpxr/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+                <iframe id="myFrame" style="position:absolute;border:none;width:100%;height:100%;left:0;top:0;" src="https://online.fliphtml5.com/plcxt/toae/" seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" src="http://www.example.com/" class="noScrolling"> </iframe>
             </div>
         </section>
         
@@ -90,12 +91,22 @@
                     frame.style.pointerEvents = 'auto'; // Возвращаем обычное поведение iframe после того, как курсор покинет его пределы
                 }, 1000); // Задержка в миллисекундах перед возвращением обычного поведения
             }
-        </script>
-               
+        </script>      
         <section id="map">
             <p class="text-center text-3xl font-bold">Интерактивная карта "По следам Маяковского"</p>
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62be483aa0e2108dca38abb782045c6fdeae13e080f77b30c1324c3a76bb6937&amp;width=100%25&amp;height=96%&amp;lang=ru_RU&amp;scroll=false"></script>        </section>
-        <section id="team" class="py-10 bg-gray-200">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62be483aa0e2108dca38abb782045c6fdeae13e080f77b30c1324c3a76bb6937&amp;width=100%25&amp;height=95%&amp;lang=ru_RU&amp;scroll=false"></script>        </section>
+        <section id="sourse" class="">
+            <p class="text-center text-3xl font-bold">Источники:</p>
+            <ol class="list-decimal text-2xl font px-2">
+                <li>1. Маяковский как главный маркетолог советского времени: рассказываем о его новаторских рекламных креативах // PEOPLETALK <a href="https://peopletalk.ru/article/mayakovskij-kak-glavnyj-marketolog-sovetskogo-vremeni-rasskazyvaem-o-ego-novatorskih-reklamnyh-kreativah/">URL: https://peopletalk.ru/article/mayakovskij-kak-glavnyj-marketolog-sovetskogo-vremeni-rasskazyvaem-o-ego-novatorskih-reklamnyh-kreativah/ </a> (дата обращения: 10.05.2024).</li>
+                <li>2. Владимир Маяковский // Культура.РФ<a href="https://www.culture.ru/persons/8266/vladimir-mayakovskii">URL: https://www.culture.ru/persons/8266/vladimir-mayakovskii</a> (дата обращения: 10.05.2024).</li>
+                <li>3. Культура советского периода // Студенческий справочник <a href="https://spravochnick.ru/kulturologiya/kultura_sovetskogo_perioda/">URL: https://spravochnick.ru/kulturologiya/kultura_sovetskogo_perioda/</a> (дата обращения: 10.05.2024).</li>
+                <li>4. Маяковский от А до Я // Arzamas Academy <a href="https://arzamas.academy/materials/736">URL: https://arzamas.academy/materials/736</a> (дата обращения: 10.05.2024).</li>
+                <li>5. Маяковская // Прогулки по метро <a href="https://www.metrowalks.com/ru/petersburg/nevsko-vasileostrovskaya/mayakovskaya">URL: https://www.metrowalks.com/ru/petersburg/nevsko-vasileostrovskaya/mayakovskaya</a> (дата обращения: 10.05.2024).</li>
+                <li>6. Памятник-бюст Владимиру Владимировичу Маяковскому // Петербург Центр <a href="https://peterburg.center/maps/pamyatnik-byust-vladimiru-vladimirovichu-mayakovskomu.html">URL: https://peterburg.center/maps/pamyatnik-byust-vladimiru-vladimirovichu-mayakovskomu.html </a>(дата обращения: 10.05.2024).</li>
+              </ol>
+        </section> 
+            <section id="team" class="py-10 bg-gray-200">
                 <div class="container mx-auto">
                     <h2 class="text-center text-3xl font-bold mb-10">Наша команда</h2>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -103,43 +114,62 @@
                         <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
                             <img src="member1.jpg" alt="Участник 1" class="w-32 h-32 object-cover rounded-full mb-4">
                             <h3 class="text-xl font-semibold mb-2">Жаров Кирилл</h3>
-                            <p class="text-gray-700 text-center">Небольшое описание участника 1</p>
+                            <p class="text-gray-700 text-center">Роль: <strong>аналитик</strong>, педант, реализатор</p>
+                            <p class="text-gray-700 text-center">Программист</p>
                         </div>
                         <!-- Участник 2 -->
                         <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
                             <img src="member2.jpg" alt="Участник 2" class="w-32 h-32 object-cover rounded-full mb-4">
                             <h3 class="text-xl font-semibold mb-2">Затолочная Александра</h3>
-                            <p class="text-gray-700 text-center">Небольшое описание участника 2</p>
+                            <p class="text-gray-700 text-center">Роль: <strong>душа компании</strong>, генератор идей, шейпер</p>
+                            <p class="text-gray-700 text-center">Сценарист и оператор</p>
                         </div>
                         <!-- Участник 3 -->
                         <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
                             <img src="member3.jpg" alt="Участник 3" class="w-32 h-32 object-cover rounded-full mb-4">
                             <h3 class="text-xl font-semibold mb-2">Карсакова Елизавета</h3>
-                            <p class="text-gray-700 text-center">Небольшое описание участника 3</p>
+                            <p class="text-gray-700 text-center">Роль: <strong>реализатор</strong>, душа компании, педант</p>
+                            <p class="text-gray-700 text-center">Сценарист и оператор</p>
                         </div>
                         <!-- Участник 4 -->
                         <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
                             <img src="member4.jpg" alt="Участник 4" class="w-32 h-32 object-cover rounded-full mb-4">
                             <h3 class="text-xl font-semibold mb-2">Петрова Ева</h3>
-                            <p class="text-gray-700 text-center">Небольшое описание участника 4</p>
+                            <p class="text-gray-700 text-center">Роль: <strong>исследователь ресурсов</strong>, генератор идей, аналитик</p>
+                            <p class="text-gray-700 text-center">Сценарист, оператор и монтажёр</p>
                         </div>
                         <!-- Участник 5 -->
                         <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
                             <img src="member5.jpg" alt="Участник 5" class="w-32 h-32 object-cover rounded-full mb-4">
                             <h3 class="text-xl font-semibold mb-2">Позлевич Анастасия</h3>
-                            <p class="text-gray-700 text-center">Небольшое описание участника 5</p>
+                            <p class="text-gray-700 text-center">Роль: <strong>генератор идей</strong>, душа компании, педант</p>
+                            <p class="text-gray-700 text-center">Собиратель информации</p>
                         </div>
                         <!-- Участник 6 -->
                         <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
                             <img src="member6.jpg" alt="Участник 6" class="w-32 h-32 object-cover rounded-full mb-4">
                             <h3 class="text-xl font-semibold mb-2">Якута Дарья</h3>
-                            <p class="text-gray-700 text-center">Небольшое описание участника 6</p>
+                            <p class="text-gray-700 text-center">Роль: <strong>координатор</strong>, душа компании, реализатор</p>
+                            <p class="text-gray-700 text-center">Сценарист и оператор</p>
                         </div>
                     </div>
                 </div>
             
         </section>
-    </div>
+        <section id="end" class="bg-red-800 flex justify-center items-center">
+            <p class="text-xl font-black text-white px-2 pt-1 h-100">
+                Что-то пошло не так и не работает?
+                <br/>Воспользуйтесь альтерантивным доступом.
+            </p>
+            <a class="ml-4" href="https://www.example.com">
+                <img src="button1.png" alt="Кнопка 1" class="size-12">
+            </a>
+            <a class="ml-4" href="https://www.anotherexample.com">
+                <img src="button2.png" alt="Кнопка 2" class="size-12">
+            </a>
+        </section>
+        
+        
     <script>
         function scrollToSection(sectionId) {
             const section = document.getElementById(sectionId);
